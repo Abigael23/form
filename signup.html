@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #signup1, #signup2, .signup{
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+    }
+    .signup, .login{
+        background-color: rgb(32, 117, 21);
+        margin-top: 20px;
+    }
+    #login1, #login2, .login{
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+    }
+    #signupdiv{
+        width: 230px;
+        height: 320px;
+        border: 1px solid grey;
+        background-color: ghostwhite;
+        border-radius: 10px;
+        margin: auto;
+        align-items: center;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    #logindiv{
+        width: 230px;
+        height: 240px;
+        border: 1px solid grey;
+         background-color: ghostwhite;
+        border-radius: 10px;
+        margin: auto;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+</style>
+<body>
+    <div id="signupdiv">
+        <button id="signup1" onclick="signupbutton()">Sign Up</button>
+        <button id="login1" onclick="loginbutton()">Login</button>
+        <div>
+            <label for="">Username</label> <br>
+            <input type="text" name="" id="">
+        </div>
+        <div>
+            <label for="">Email</label> <br>
+            <input type="text" name="" id="">
+        </div>
+        <div>
+            <label for="">Phone number</label><br>
+            <input type="text" name="" id="">
+        </div>
+        <div>
+            <label for="">Password</label><br>
+            <input type="password" name="" id="">
+        </div>
+        <div>
+            <label for="">Confirm Password</label><br>
+            <input type="password" name="" id="">
+        </div>
+        <button class="login">LOGIN</button>
+    </div>
+
+    <div id="logindiv">
+        <button id="signup2" onclick="signupbutton()">Sign Up</button>
+        <button id="login2" onclick="loginbutton()">Login</button>
+        <div>
+            <label for="">Username</label><br>
+            <input type="text" name="" id="">
+        </div>
+        <div>
+            <label for="">Password</label><br>
+            <input type="password" name="" id="">
+        </div>
+        <div>
+            <label for="">Confirm Password</label><br>
+            <input type="password" name="" id="">
+        </div>
+        <button class="signup">SIGN UP</button>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    // document.getElementById("signup").style.display = "initial"
+    // document.getElementById("login").style.display = "initial"
+    document.getElementById("signupdiv").style.display = "block"
+    document.getElementById("logindiv").style.display = "none"
+    // document.getElementById("signupdiv").style.backgroundColor = "red"
+   
+    function signupbutton() {
+        // document.getElementById("signup").style.display = "inline"
+        // document.getElementById("login").style.display = "inline"
+        document.getElementById("signupdiv").style.display = "block"
+        document.getElementById("logindiv").style.display = "none"
+        document.getElementById("signup1").style.backgroundColor = "grey"
+    }
+    function loginbutton() {
+        // document.getElementById("signup").style.display = "inline"
+        // document.getElementById("login").style.display = "inline"
+        document.getElementById("signupdiv").style.display = "none"
+        document.getElementById("logindiv").style.display = "block"
+        document.getElementById("login2").style.backgroundColor = "blue"
+    }
+</script>
