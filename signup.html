@@ -6,63 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\USER\Desktop\Javascript\FORM\signup.css">
 </head>
-<style>
-    main{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    #signup1, #signup2, #login1, #login2, .login, .signup{
-        width: 100px;
-        height: 40px;
-        border-radius: 10px;
-        outline: none;
-        border: none;
-        background: none;
-    }
-    #login1{
-        margin-left: 110px;
-    }
-    #login2{
-        margin-left: 80px;
-    }
-    .signup, .login{
-        background-color: green;
-        margin-left: 120px;
-    }
-    #signupdiv{
-        width: 350px;
-        height: 500px;
-        border: 1px solid grey;
-        background-color: ghostwhite;
-        border-radius: 10px;
-        padding-left: 10px;
-        padding-top: 10px;
-    }
-    #logindiv{
-        width: 350px;
-        height: 350px;
-        border: 1px solid grey;
-        background-color: ghostwhite;
-        border-radius: 10px;
-        padding-left: 10px;
-        padding-top: 10px;
-    }
-    input{
-        width: 320px;
-        height: 35px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        outline: none;
-    }
-</style>
 <body>
    <main>
     <div></div>
     <div>
         <div id="signupdiv">
+            <p><b>BOLD-FORM</b></p>
             <button id="signup1" onclick="signupbutton()">Sign Up</button>
             <button id="login1" onclick="loginbutton()">Login</button>
             <div>
@@ -89,6 +40,7 @@
         </div>
     
         <div id="logindiv">
+            <p><b>BOLD-FORM</b></p>
             <button id="signup2" onclick="signupbutton()">Sign Up</button>
             <button id="login2" onclick="loginbutton()">Login</button>
             <div>
@@ -111,26 +63,4 @@
 </body>
 
 </html>
-
-<script>
-    // document.getElementById("signup").style.display = "initial"
-    // document.getElementById("login").style.display = "initial"
-    document.getElementById("signupdiv").style.display = "block"
-    document.getElementById("logindiv").style.display = "none"
-    // document.getElementById("signupdiv").style.backgroundColor = "red"
-   
-    function signupbutton() {
-        // document.getElementById("signup").style.display = "inline"
-        // document.getElementById("login").style.display = "inline"
-        document.getElementById("signupdiv").style.display = "block"
-        document.getElementById("logindiv").style.display = "none"
-        document.getElementById("signup1").style.backgroundColor = "grey"
-    }
-    function loginbutton() {
-        // document.getElementById("signup").style.display = "inline"
-        // document.getElementById("login").style.display = "inline"
-        document.getElementById("signupdiv").style.display = "none"
-        document.getElementById("logindiv").style.display = "block"
-        document.getElementById("login2").style.backgroundColor = "blue"
-    }
-</script>
+<script src="C:\Users\USER\Desktop\Javascript\FORM\signup.js"></script>
