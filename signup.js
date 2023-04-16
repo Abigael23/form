@@ -18,3 +18,10 @@
         document.getElementById("logindiv").style.display = "block"
         document.getElementById("login2").style.backgroundColor = "blue"
     }
+//     function load(event){
+// document.getElementById("load").innerHTML = <button>LOADING...</button>
+//     }
+
+//     addEventListener(event){
+//         document.getElementById("load").innerHTML = <button>LOADING...</button>
+//     }
