@@ -1,64 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <title>Document</title>
     <link rel="stylesheet" href="C:\Users\USER\Desktop\Javascript\FORM\signup.css">
 </head>
+
 <body>
-   <main>
-    <div></div>
-    <div>
-        <div id="signupdiv">
-            <p><b>BOLD-FORM</b></p>
-            <button id="signup1" onclick="signupbutton()">Sign Up</button>
-            <button id="login1" onclick="loginbutton()">Login</button>
-            <div>
-                <label for="">Username</label> <br>
-                <input type="text" name="" id="">
+    <main>
+        <div></div>
+        <div>
+            <!-- <form action=""> -->
+                <div id="signupdiv">
+                    <p><b>BOLD-FORM</b></p>
+                    <button id="signup1" onclick="signupbutton()">SIGN UP</button>
+                    <button id="login1" onclick="loginbutton()">LOG IN</button>
+                    <div>
+                        <label for="">Username</label> <br>
+                        <input type="text" name="" id="username">
+                    </div>
+                    <div>
+                        <label for="">Email Address</label> <br>
+                        <input type="email" name="" id="email">
+                    </div>
+                    <div>
+                        <label for="">Phone number</label><br>
+                        <input type="text" name="" id="phonenumber">
+                    </div>
+                    <div>
+                        <label for="">Password</label><br>
+                        <input type="password" name="" id="password">
+                    </div>
+                    <div>
+                        <label for="">Confirm Password</label><br>
+                        <input type="password" name="" id="confirmpassword">
+                    </div>
+                    <button class="signup" onclick="signUp(event)">SIGN UP</button>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <hr>
+                        <span>or</span>
+                        <hr>
+                    </div>
+                    <div>
+                        <button id="google" class="btn btn-info w-75 text-white">
+                            Sign Up with Google
+                        </button>
+                    </div>
+            <!-- </form> -->
             </div>
-            <div>
-                <label for="">Email</label> <br>
-                <input type="text" name="" id="">
-            </div>
-            <div>
-                <label for="">Phone number</label><br>
-                <input type="text" name="" id="">
-            </div>
-            <div>
-                <label for="">Password</label><br>
-                <input type="password" name="" id="">
-            </div>
-            <div>
-                <label for="">Confirm Password</label><br>
-                <input type="password" name="" id="">
-            </div>
-            <button class="login">LOGIN</button>
+
+            <!-- <form action="" id="logindiv"> -->
+                <div id="logindiv">
+                <p><b>BOLD-FORM</b></p>
+                <button id="signup2" onclick="signupbutton()">SIGN UP</button>
+                <button id="login2" onclick="loginbutton()">LOG IN</button>
+                <div>
+                    <label for="">Username</label><br>
+                    <input type="text" name="" id="username1">
+                </div>
+                <div>
+                    <label for="">Password</label><br>
+                    <input type="password" name="" id="password1">
+                </div>
+                <div>
+                    <label for="">Confirm Password</label><br>
+                    <input type="password" name="" id="confirmpassword1">
+                </div>
+                <button class="login" id="login" onclick="logIn(event)">LOG IN</button>
+                </div>
+            
         </div>
-    
-        <div id="logindiv">
-            <p><b>BOLD-FORM</b></p>
-            <button id="signup2" onclick="signupbutton()">Sign Up</button>
-            <button id="login2" onclick="loginbutton()">Login</button>
-            <div>
-                <label for="">Username</label><br>
-                <input type="text" name="" id="">
-            </div>
-            <div>
-                <label for="">Password</label><br>
-                <input type="password" name="" id="">
-            </div>
-            <div>
-                <label for="">Confirm Password</label><br>
-                <input type="password" name="" id="">
-            </div>
-            <button class="signup" id="load" onclick="load(event)">SIGN UP</button>
-        </div>
-    
-    </div>
-   </main>
+        <!-- </form> -->
+    </main>
 </body>
 <script src="C:\Users\USER\Desktop\Javascript\FORM\signup.js"></script>
+
 </html>
