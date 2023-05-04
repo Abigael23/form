@@ -27,14 +27,14 @@
             confirmpassword: confirmpassword.value
         }
         console.log(user);
-        if (password.value.length < 6) {
-            alert("Password too weak")
-        }else if(password.value === confirmpassword.value){
-            alert("Sign Up successful")
-        } else if (password.value == "" || email.value == "" || phonenumber.value ==""|| username.value =="") {
-            alert("Input field cannot be empty")
-        } else if(password.value !== confirmpassword.value) {
+        if  (password.value == "" || email.value == "" || phonenumber.value ==""|| username.value =="") {
+            alert("Input field cannot be empty") 
+        }else if(password.value !== confirmpassword.value) {
             alert("Password does not match")
+        } else if (password.value.length < 6) {
+            alert("Password too weak")
+        } else if(password.value === confirmpassword.value){
+            alert("Sign Up successful")
         }
     }
     function logIn(ev) {
