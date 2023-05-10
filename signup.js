@@ -6,16 +6,17 @@
     let phonenumber = document.getElementById("phonenumber")
     let password = document.getElementById("password")
     let confirmpassword = document.getElementById("confirmpassword")
+    // let registeredUser = 
 
     function signupbutton() {
         document.getElementById("signupdiv").style.display = "block"
         document.getElementById("logindiv").style.display = "none"
-        document.getElementById("signup1").style.backgroundColor = "green"
+        document.getElementById("signup1").style.backgroundColor = "orange"
     }
     function loginbutton() {
         document.getElementById("signupdiv").style.display = "none"
         document.getElementById("logindiv").style.display = "block"
-        document.getElementById("login2").style.backgroundColor = "blue"
+        document.getElementById("login2").style.backgroundColor = "cyan"
     }
     function signUp(ev){
         ev.preventDefault();
@@ -29,10 +30,10 @@
         console.log(user);
         if  (password.value == "" || email.value == "" || phonenumber.value ==""|| username.value =="") {
             alert("Input field cannot be empty") 
-        }else if(password.value !== confirmpassword.value) {
-            alert("Password does not match")
         } else if (password.value.length < 6) {
             alert("Password too weak")
+        }else if(password.value !== confirmpassword.value) {
+            alert("Password does not match")
         } else if(password.value === confirmpassword.value){
             alert("Sign Up successful")
         }
@@ -40,11 +41,10 @@
     function logIn(ev) {
         ev.preventDefault();
         let userdata ={
-            username: username1.value,
-            password: password1.value,
-            confirmpassword: confirmpassword1.value
+            email: email1.value,
+            password: password1.value
         }
         console.log(userdata);
-        // localStorage.getItem("loggedUser", JSON.stringify(userdata))
-        // console.log(loggedUser);
+        alert("Login successful")
+        window.location.href = "Dashboard.html"
     }
